@@ -8,7 +8,7 @@ const {
   Registration,
   Student,
   ClassSelection,
-} = require("./models");
+} = require("./models/");
 const { initializeDatabase, resetClasses } = require("./db");
 const { Op } = require("sequelize");
 
@@ -80,12 +80,10 @@ app.post("/api/register", async (req, res) => {
     }
 
     if (!students || !Array.isArray(students) || students.length === 0) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          message: "At least one student must be registered",
-        });
+      return res.status(400).json({
+        success: false,
+        message: "At least one student must be registered",
+      });
     }
 
     // Validate each student
@@ -126,12 +124,10 @@ app.post("/api/register", async (req, res) => {
 
         if (!classObj) {
           await transaction.rollback();
-          return res
-            .status(400)
-            .json({
-              success: false,
-              message: `Invalid class selection: ${classId}`,
-            });
+          return res.status(400).json({
+            success: false,
+            message: `Invalid class selection: ${classId}`,
+          });
         }
 
         const enrolled = parseInt(classObj.get("enrolled") || 0);
