@@ -1,0 +1,59 @@
+{
+  "classes": [
+    {
+      "name": "Art & Drawing",
+      "capacity": 20,
+      "description": "Explore various art mediums and drawing techniques."
+    },
+    {
+      "name": "Music Fundamentals",
+      "capacity": 15,
+      "description": "Introduction to music theory and basic instruments."
+    },
+    {
+      "name": "Science Experiments",
+      "capacity": 18,
+      "description": "Hands-on science experiments and principles."
+    },
+    {
+      "name": "Math Challenge",
+      "capacity": 20,
+      "description": "Problem-solving and mathematical concepts."
+    },
+    {
+      "name": "Drama & Theater",
+      "capacity": 15,
+      "description": "Acting, improvisation, and stage performance."
+    },
+    {
+      "name": "Sports & Athletics",
+      "capacity": 25,
+      "description": "Team sports, physical activities, and coordination."
+    },
+    {
+      "name": "Coding Basics",
+      "capacity": 18,
+      "description": "Introduction to programming concepts and logic."
+    },
+    {
+      "name": "Cooking & Nutrition",
+      "capacity": 15,
+      "description": "Prepare simple recipes and learn about nutrition."
+    },
+    {
+      "name": "Robotics",
+      "capacity": 12,
+      "description": "Building and programming simple robots."
+    },
+    {
+      "name": "Dance",
+      "capacity": 20,
+      "description": "Various dance styles and movement coordination."
+    },
+    {
+      "name": "Chess & Strategy Games",
+      "capacity": 16,
+      "description": "Learn chess and other strategic thinking games."
+    }
+  ]
+}
